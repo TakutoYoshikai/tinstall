@@ -1,6 +1,16 @@
 # tinstall
 tinstall is a script to install Takuto Yoshikai's open source software.
 
+### Requirements
+* macOS or Ubuntu
+
+### Supports Takuto Yoshikai's
+* pip packages
+* npm packages
+* cargo packages
+* shell scripts
+
+
 ### Usage
 
 **install**
