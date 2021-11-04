@@ -15,8 +15,8 @@ fi
 
 git clone https://github.com/TakutoYoshikai/$1.git
 
-if [ -f ./tpackage.txt ]; then
-  packages=($(cat ./tpackage.txt))
+if [ -f ./$1/tpackage.txt ]; then
+  packages=($(cat ./$1/tpackage.txt))
   for package in "${packages[@]}"
   do
     tinstall $package
