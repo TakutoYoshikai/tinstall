@@ -14,7 +14,6 @@ if [[ $1 = *"tpackage" ]]; then
 fi
 
 git clone https://github.com/TakutoYoshikai/$1.git
-cd $1
 
 if [ -f ./tpackage.txt ]; then
   packages=($(cat ./tpackage.txt))
@@ -23,6 +22,8 @@ if [ -f ./tpackage.txt ]; then
     tinstall $package
   done
 fi
+
+cd $1
 
 if [ -f ./setup.py ]; then
   pip3 install -e .
