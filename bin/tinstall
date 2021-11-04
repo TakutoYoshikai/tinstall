@@ -26,4 +26,10 @@ elif [ -f ./setup.sh ]; then
   ./setup.sh
 elif [ -f ./Cargo.toml ]; then
   cargo install --path .
+elif [ -f ./tpackage.txt ]; then
+  packages=($(cat ./tpackage.txt))
+  for package in "${packages[@]}"
+  do
+    tinstall $package
+  done
 fi
