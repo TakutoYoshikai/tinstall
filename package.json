@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "tinstall": "./bin/tinstall"
+    "tinstall": "./bin/tinstall",
     "tinstall-package": "./bin/tinstall-package"
   }
 }
